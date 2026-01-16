@@ -1,0 +1,17 @@
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Host=localhost;Port=5432;Database=valetax_dev;Username=YOUR_USERNAME;Password=YOUR_PASSWORD"
+  },
+  "JwtSettings": {
+    "Secret": "YOUR_SECRET_KEY_MIN_32_CHARS_LONG"
+  },
+  "Serilog": {
+    "MinimumLevel": {
+      "Default": "Debug",
+      "Override": {
+        "Microsoft": "Information",
+        "Microsoft.EntityFrameworkCore.Database.Command": "Information"
+      }
+    }
+  }
+}

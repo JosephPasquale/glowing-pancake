@@ -1,0 +1,13 @@
+# Test projects - disable certain rules
+[*.cs]
+# CA1707: Identifiers should not contain underscores (test methods use underscores)
+dotnet_diagnostic.CA1707.severity = none
+
+# CA1852: Seal internal types (test helper records)
+dotnet_diagnostic.CA1852.severity = none
+
+# CA1861: Avoid constant arrays as arguments
+dotnet_diagnostic.CA1861.severity = none
+
+# CA1816: Dispose methods should call SuppressFinalize
+dotnet_diagnostic.CA1816.severity = none
